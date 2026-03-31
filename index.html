@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Form project</title>
+</head>
+<body>
+
+    <div class="container">
+        <section class="login-section">
+            <h1 class="title">Users App</h1>
+
+            <div class="form-block">
+                <form  class="form" data-create-user-form>
+                    <div class="control-field">
+                        <label for="nameId" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="nameId" name="userName" required minlength="2" maxlength="23">
+                    </div>
+
+                    <div class="control-field">
+                        <label for="cityId" class="form-label">City</label>
+                        <input type="text" class="form-control" id="cityId" name="userCity" required minlength="2" maxlength="20">
+                    </div>
+
+                    <div class="control-field">
+                        <label for="emailId" class="form-label">Email</label>
+                        <input type="email" class="form-control form-control--email" id="cityemailIdId." name="userEmail" required>
+                    </div>
+                    <div class="control-field">
+                        <label for="imagesUrlId" class="form-label">Email</label>
+
+                        <select name="userImageUrl" id="imagesUrlId" class="form-control form-control--images" required>
+                            <option value="">Image URL</option>
+                            <hr>
+                            <option 
+                                value="https://images.squarespace-cdn.com/content/v1/607f89e638219e13eee71b1e/1684821560422-SD5V37BAG28BURTLIXUQ/michael-sum-LEpfefQf4rU-unsplash.jpg">Cat 1</option>
+                            <option 
+                                value="https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2194895813.jpg?c=original&q=w_860,c_fill">Cat 2</option>
+                            <option
+                                 value="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCvPxBT093cJiGBFPMhfYAvWnyfSHZX-m67A&s">Cat 3</option>
+                            <option
+                                 value="https://i.guim.co.uk/img/media/fe1e34da640c5c56ed16f76ce6f994fa9343d09d/0_174_3408_2046/master/3408.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=67773a9d419786091c958b2ad08eae5e">Dog 1</option>
+                            <option
+                                 value="https://media.cnn.com/api/v1/images/stellar/prod/201030094143-stock-rhodesian-ridgeback.jpg?q=w_2187,h_1458,x_0,y_0,c_fill">Dog 2</option>
+                            <option
+                                 value="https://cdn.britannica.com/16/234216-050-C66F8665/beagle-hound-dog.jpg">Dog 3</option>
+                            <option
+                                 value="https://www.bund-hessen.de/fileadmin/hessen/Presse/2020/schaeferproteste-wolf-in-hessen-wiesbaden.jpg">Wolf 1</option>
+                            <option
+                                 value="https://njaes.rutgers.edu/fs1325/FS1325-1-big.jpg">Fox 1</option>
+                        
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn submit-btn">Create User</button>
+                     
+                </form>
+            </div>
+        </section>
+    </div>
+    <hr>
+
+    <div class="users-container" data-users-container></div>
+    <dialog class="edit-form-dialog" data-edit-user-form-dialog></dialog>
+
+</body>
+</html>
